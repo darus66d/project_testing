@@ -19,7 +19,7 @@ class HomePage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text("Expanded")),backgroundColor: Colors.orange,),
+        appBar: AppBar(title: Center(child: Text("Expanded")),backgroundColor: Colors.orange,),
         body: Column(
           children: [
             // Container(color: Colors.red,height: 100,),
@@ -27,7 +27,7 @@ class HomePage1 extends StatelessWidget {
             // Container(color: Colors.yellow,height: 100,),
             Expanded(
               flex: 2,
-                child: Container(color: Colors.red,),
+              child: Container(color: Colors.red,),
             ),
             Expanded(child: Container(color: Colors.green)),
             Expanded(child: Container(color: Colors.yellow)),
