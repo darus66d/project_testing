@@ -19,12 +19,12 @@ class HomePage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text("wrap",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.indigo,),
+        appBar: AppBar(title: Center(child: Text("wrap",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.indigo,),
         body:Center(
           child: Container(
             width: 300,
             height: 500,
-              color: Colors.orange,
+            color: Colors.orange,
             child: Align(
               alignment: Alignment.topRight,
               widthFactor: 2,
@@ -38,17 +38,17 @@ class HomePage1 extends StatelessWidget {
         )
 
 
-        // body:Center(
-        //   child: Align(
-        //     alignment: Alignment.topRight,
-        //     widthFactor: 6,
-        //     heightFactor: 20,
-        //     child: Container(
-        //       color: Colors.cyan,
-        //       child: Text("Aligned Text"),
-        //     ),
-        //   ),
-        // )
+      // body:Center(
+      //   child: Align(
+      //     alignment: Alignment.topRight,
+      //     widthFactor: 6,
+      //     heightFactor: 20,
+      //     child: Container(
+      //       color: Colors.cyan,
+      //       child: Text("Aligned Text"),
+      //     ),
+      //   ),
+      // )
 
 
     );
