@@ -19,7 +19,7 @@ class HomePage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text("Flexible",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.indigo,),
+        appBar: AppBar(title: Center(child: Text("Flexible",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.indigo,),
         body: Padding(
           padding: const EdgeInsets.only(top: 200),
           child: Row(
