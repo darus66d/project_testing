@@ -19,7 +19,7 @@ class HomePage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text("FittedBox",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.black,),
+        appBar: AppBar(title: Center(child: Text("FittedBox",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.black,),
         body:Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
@@ -28,15 +28,15 @@ class HomePage1 extends StatelessWidget {
                   child:
                   Text("This is very long text",
                       style: TextStyle(fontSize: 50
+                      )
+                  )
               )
-              )
-              )
 
 
 
 
 
-              ),
+          ),
         ));
   }
 }
