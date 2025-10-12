@@ -19,25 +19,35 @@ class HomePage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text("FittedBox",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.black,),
-        body:Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-              color: Colors.indigo,
-              child:  FittedBox(
-                  child:
-                  Text("This is very long text",
-                      style: TextStyle(fontSize: 50
-              )
-              )
-              )
+      appBar: AppBar(title: Center(child: Text("Wrap",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.black,),
+        body:Container(
+            color: Colors.grey[200],
+            width: double.infinity,
+            height: 300,
+            child: Wrap(
+              spacing: 12,
+              runSpacing: 12,
+              alignment: WrapAlignment.center,
+              runAlignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  Container(color: Colors.red,height: 40,width: 80,),
+                  Container(color: Colors.green,height: 60,width: 80,),
+                  Container(color: Colors.deepOrange,height: 30,width: 80,),
+                  Container(color: Colors.amber,height: 50,width: 80,),
+                  Container(color: Colors.blue,height: 70,width: 80,),
+                  Container(color: Colors.purple,height: 40,width: 80,),
+                  Container(color: Colors.greenAccent,height: 90,width: 80,),
+                  Container(color: Colors.teal,height: 20,width: 80,),
+                  Container(color: Colors.brown,height: 50,width: 80,),
+              ],
+            )
 
 
 
 
 
-              ),
-        ));
+            ));
   }
 }
 
