@@ -20,24 +20,28 @@ class HomePage1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Center(child: Text("FittedBox",style: TextStyle(color: Colors.white),)),backgroundColor: Colors.black,),
-        body:Padding(
-          padding: const EdgeInsets.all(8.0),
+        body:Center(
           child: Container(
-              color: Colors.indigo,
-              child:  FittedBox(
-                  child:
-                  Text("This is very long text",
-                      style: TextStyle(fontSize: 50
-                      )
-                  )
-              )
-
-
-
-
-
+            color: Colors.blueGrey,
+            height: 150,
+            width: 150,
+            child: FittedBox(
+              // fit: BoxFit.contain,
+              // fit: BoxFit.cover,
+              // fit: BoxFit.fill,
+              // fit: BoxFit.fitHeight,
+              // fit: BoxFit.fitWidth,
+              // fit: BoxFit.scaleDown,
+              // fit: BoxFit.none,
+              // fit: BoxFit.values[1],
+              child: Text(
+                "This is a long text needs to fit",
+                style: TextStyle(fontSize: 30,color: Colors.white,),
+              ),
+            ),
           ),
-        ));
+        )
+    );
   }
 }
 
